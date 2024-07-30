@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+:disabled{
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dd1122;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #404141;
+}
+
+button:where(.swal2-styled){
+  box-shadow: none !important;
+}
+
+.swal2-confirm, .swal2-cancel{
+  width: 90px !important;
+}
+
+.schedule .anticon-calendar, .schedule .anticon-clock-circle {
+  color: white !important;
+}
+
+/* placeholder color change */
+.ant-select-selection-placeholder, .custom-select-placeholder .ant-select-selection-item{
+  color: rgba(250, 250, 250,  1) !important;
+}
+
+.ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover .ant-select-selector{
+  border-color: white !important;
+  box-shadow: none !important;
+}
+
+.ant-select-focused:where(.css-dev-only-do-not-override-11xg00t).ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector{
+  border-color: white !important;
+  box-shadow: none !important;
+}
+
+/* modal */
+.ant-modal-header{
+  background: #555656 !important;
+}
+
+.ant-modal .ant-modal-title{
+  margin: 0 !important;
+  font-weight: 0 !important;
+  font-size:0 !important;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.ant-checkbox-wrapper.ant-checkbox-wrapper-in-form-item input[type="checkbox"] {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #dd1122 !important;
+  border-color: #dd1122 !important;
+}
